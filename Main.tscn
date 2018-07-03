@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Lightning.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="Lightning1" parent="." index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 206.016, 40.2075 )
+
+[node name="Lightning2" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 48.7137, 40.2075 )
+
+[node name="Lightning3" parent="." index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 446.596, 43.9088 )
+
+[node name="Lightning4" parent="." index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 837.077, 47.61 )
+
+

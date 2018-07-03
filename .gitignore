@@ -1,0 +1,13 @@
+assets/
+
+.DS_Store
+*~
+*.import
+logs/
+.import/*
+
+#GodotGuns/*
+
+*.zip
+*.pck
+exports/*
