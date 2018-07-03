@@ -1,5 +1,7 @@
 extends Line2D
 
+#Tutorial - http://drilian.com/2009/02/25/lightning-bolts/
+
 class Segment:
 	var start
 	var end
