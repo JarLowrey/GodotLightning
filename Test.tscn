@@ -1,31 +1,32 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Test.gd" type="Script" id=1]
-[ext_resource path="res://Effects/FadedLightning/FadedLightning.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Lightning.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Effects/FadedLightning/FadedLightning.tscn" type="PackedScene" id=3]
 
 [node name="Node2D" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 
-[node name="FadedLightning1" parent="." index="0" instance=ExtResource( 2 )]
+[node name="Lightning1" parent="." index="0" instance=ExtResource( 2 )]
 
-position = Vector2( 76.0995, 51.8445 )
+position = Vector2( 808.958, 36.2636 )
 
-[node name="FadedLightning2" parent="." index="1" instance=ExtResource( 2 )]
+[node name="FadedLightning2" parent="." index="1" instance=ExtResource( 3 )]
 
-position = Vector2( 366.209, 107.635 )
+position = Vector2( 567.053, 60.213 )
 
-[node name="FadedLightning3" parent="." index="2" instance=ExtResource( 2 )]
+[node name="FadedLightning3" parent="." index="2" instance=ExtResource( 3 )]
 
-position = Vector2( 357.84, 54.634 )
+position = Vector2( 622.844, 43.4758 )
 
-[node name="FadedLightning4" parent="." index="3" instance=ExtResource( 2 )]
+[node name="FadedLightning4" parent="." index="3" instance=ExtResource( 3 )]
 
-position = Vector2( 176.522, 60.213 )
+position = Vector2( 477.789, 51.8445 )
 
-[node name="FadedLightning5" parent="." index="4" instance=ExtResource( 2 )]
+[node name="FadedLightning5" parent="." index="4" instance=ExtResource( 3 )]
 
-position = Vector2( 243.47, 54.634 )
+position = Vector2( 131.89, 54.634 )
 
 [node name="ResetLightningTimer" type="Timer" parent="." index="5"]
 
