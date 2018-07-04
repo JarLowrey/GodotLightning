@@ -10,14 +10,10 @@ config_version=3
 
 [application]
 
-config/name="New Game Project"
-run/main_scene="res://Main.tscn"
+config/name="GodotLightning"
+run/main_scene="res://Test.tscn"
 config/icon="res://icon.png"
 
 [display]
 
 window/size/height=1024
-
-[rendering]
-
-environment/default_environment="res://default_env.tres"

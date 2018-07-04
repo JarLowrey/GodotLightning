@@ -12,5 +12,6 @@ sharp_limit = 2.0
 round_precision = 8
 script = ExtResource( 1 )
 _sections_unfolded = [ "Capping", "Fill", "Material", "Transform", "Visibility" ]
+split_end_scene_path = "./Lightning.tscn"
 
 

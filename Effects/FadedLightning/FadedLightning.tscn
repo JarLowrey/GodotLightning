@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Lightning.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Effects/FadedLightning/Fade.shader" type="Shader" id=2]
+[ext_resource path="res://Effects/FadedLightning/FadedLightning.gd" type="Script" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+render_priority = 0
+shader = ExtResource( 2 )
+shader_param/epicenter = null
+shader_param/max_time = 0.1
+shader_param/start_time = 1.0
+shader_param/max_dist = 0.0
+_sections_unfolded = [ "shader_param" ]
+
+[node name="FadedLightning" instance=ExtResource( 1 )]
+
+material = SubResource( 1 )
+script = ExtResource( 3 )
+split_end_scene_path = "./Effects/FadedLightning/FadedLightning.tscn"
+
+

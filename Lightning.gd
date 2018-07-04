@@ -1,5 +1,7 @@
 extends Line2D
 
+export var split_end_scene_path = "./Lightning.tscn"
+
 #Tutorial - http://drilian.com/2009/02/25/lightning-bolts/
 
 class Segment:
@@ -34,7 +36,7 @@ func apply_lightning(end_point, num_generations, max_offset, split_end_likelihoo
 	#create new segments afterwards so the positions are stable
 	for segment in segments:
 		if randf() < split_end_likelihood:
-			var split_end2 = preload("./Lightning.tscn").instance()
+			var split_end2 = load(split_end_scene_path).instance()
 			add_child(split_end2)
 			var new_color = self.default_color
 #			new_color.a *= alpha_fade_per_split
