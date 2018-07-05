@@ -11,9 +11,7 @@ func _ready():
 	$ResetLightningTimer.start()
 
 func _reset_lightning():
-	var curr_time = OS.get_ticks_msec() / 1000
-
-	$FadedLightning2.set_start_time(curr_time + .2, 0.1)
-	$FadedLightning3.set_start_time(curr_time + .1, 0.1)
-	$FadedLightning4.set_start_time(curr_time + .6, 0.1)
-	$FadedLightning5.set_start_time(curr_time + .8, 0.05)
+	$FadedLightning2.play_lightning(0.1, .1)
+	$FadedLightning3.play_lightning(0.1, .2)
+	$FadedLightning4.play_lightning(0.1, .3)
+	$FadedLightning5.play_lightning(0.1, .4)
